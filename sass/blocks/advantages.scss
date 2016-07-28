@@ -1,0 +1,80 @@
+.advantages {
+	
+    &__items {
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 35px;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: "Open Sans";
+        font-weight: 300;
+        color: #fff;
+        
+        &--icon-1 {
+            
+            &::before {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 35px;
+            top: -8px;
+            left: 10px;
+            background: url("/img/adv-icon-1.png") no-repeat 50% 50%;    
+            }
+        }
+        
+        &--icon-2 {
+            
+            &::before {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 35px;
+            top: -8px;
+            left: 10px;
+            background: url("/img/adv-icon-2.png") no-repeat 50% 50%;    
+            }
+        }
+        
+        &--icon-3 {
+            
+            line-height: 20px;
+            
+            &::before {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 35px;
+            top: -8px;
+            left: 10px;
+            background: url("/img/adv-icon-3.png") no-repeat 50% 50%;    
+            }
+        }
+        
+        &--icon-4 {
+            
+            &::before {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 35px;
+            top: -8px;
+            left: 10px;
+            background: url("/img/adv-icon-4.png") no-repeat 50% 50%;    
+            }
+        }
+        
+        &--icon-5 {
+            
+            &::before {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 35px;
+            top: -8px;
+            left: 10px;
+            background: url("/img/adv-icon-5.png") no-repeat 50% 50%;    
+            }
+        }
+    }
+}

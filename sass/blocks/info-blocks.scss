@@ -1,0 +1,69 @@
+.info-blocks {
+    max-width: 821px;
+    min-height: 150px;
+    line-height: 150px;
+    margin: 0 auto;
+    
+    &__logo {
+        display: inline-block;
+        width: 23%;
+        margin-right: 3%;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    
+    &__slogan {
+        display: inline-block;
+        width: 42%;
+        margin-right: 5%;
+        line-height: normal;
+        vertical-align: middle;
+//        max-width: 350px;
+    }
+    
+    &__top-contacts {
+        display: inline-block;
+        width: 25%;
+        line-height: normal;
+        vertical-align: middle;
+//        max-width: 205px;
+    }
+    
+    &__title {
+        font-size: 24px;
+        font-family: "PT Sans Caption";
+        font-weight: bold;
+    }
+    
+    &__items {
+        
+        &--gray {
+            font-size: 16px;
+            line-height: 30px;
+            font-family: "Open Sans";
+            font-weight: normal;
+            color: #808080;
+        }
+    }
+    
+    &__tel {
+        font-size: 22px;
+        line-height: 24px;
+        font-family: "PT Sans Caption";
+        font-weight: bold;
+    }
+    
+    &__callback-order {
+        padding-left: 30px;
+        font-size: 13px;
+        line-height: 24px;
+        font-family: "PT Sans Caption";
+        font-weight: normal;
+        text-decoration: underline;
+        color: #3a96c5;
+            
+            &:hover {
+                color: #0f5c85;
+        }
+    }
+}

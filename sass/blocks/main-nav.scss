@@ -1,0 +1,81 @@
+.main-nav {
+    max-width: 821px;
+	min-height: 60px;
+    margin: 0 auto;
+    
+    &__list {
+        display: inline-block;
+        width: 60%;
+        line-height: 60px;
+    }
+    
+    &__list-users {
+        display: inline-block;
+        width: 39%;
+        line-height: 60px;
+        text-align: right;
+    }
+    
+    &__items {
+            display: inline-block;
+            margin-right: 8%;
+        
+        &--no-margin {
+            margin-right: 0;
+        }
+        
+        &--price {
+            position: relative;
+            width: 120px;
+            height: 60px;
+            margin-right: 3%;
+            text-align: center;
+            background: #3a96c5;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                width: 16px;
+                height: 19px;
+                top: 20px;
+                left: 20px;
+                background: url("/img/icon-price.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--dealer {
+            position: relative;
+            padding-left: 40px;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                width: 16px;
+                height: 19px;
+                top: 20px;
+                left: 12px;
+                background: url("/img/icon-dealer.png") no-repeat 50% 50%;
+                
+                
+            }
+        }
+    }
+    
+    &__links {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "PT Sans Caption";
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        
+            &:hover {
+                color: #78acc8;
+            }
+
+            &--icon {
+                margin-right: 0;
+                padding-left: 30px;
+         }
+    }
+}

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans|Open+Sans:400,700,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <title>Миасс</title>
 </head>
 
@@ -13,23 +14,36 @@
     <header class="page-header">
         <nav class="main-nav">
             <ul class="main-nav__list">
-                <li class="main-nav__items"><a href="#">Главная</a></li>
-                <li class="main-nav__items"><a href="#">О нас</a></li>
-                <li class="main-nav__items"><a href="#">Наши работы</a></li>
-                <li class="main-nav__items"><a href="#">Контакты</a></li>
+                <li class="main-nav__items"><a class="main-nav__links" href="#">Главная</a></li>
+                <li class="main-nav__items"><a class="main-nav__links" href="#">О нас</a></li>
+                <li class="main-nav__items"><a class="main-nav__links" href="#">Наши работы</a></li>
+                <li class="main-nav__items  main-nav__items--no-margin"><a class="main-nav__links  main-nav__links" href="#">Контакты</a></li>
             </ul>
             <ul class="main-nav__list-users">
-                <li class="main-nav__items"><a href="#">Прайс</a></li>
-                <li class="main-nav__items"><a href="#">Для дилеров</a></li>
+                <li class="main-nav__items  main-nav__items--price"><a class="main-nav__links  main-nav__links--icon" href="#">Прайс</a></li>
+                <li class="main-nav__items  main-nav__items--dealer  main-nav__items--no-margin"><a class="main-nav__links" href="#">Для дилеров</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="">
-            <div class="logo"></div>
-            <div class="slogan"></div>
-            <div class="top-contacts"></div>
+        
+        <div class="info-blocks">
+            <div class="info-blocks__logo"><a href="#"><img src="/img/logo-top.jpg" alt="Компания Простор"></a></div>
+            <div class="info-blocks__slogan">
+                <ul class="info-blocks__slogan-list">
+                    <li class="info-blocks__slogan-items">
+                        <h1 class="info-blocks__title">Натяжные потолки в Миассе</h1>
+                    </li>
+                    <li class="info-blocks__slogan-items  info-blocks__items--gray">Простое решение для вашего потолка!</li>
+                </ul>
+            </div>
+            <div class="info-blocks__top-contacts">
+                <ul class="info-blocks__top-contacts-list">
+                    <li class="info-blocks__tel">8 (3513) 59-00-56</li>
+                    <li class="info-blocks__callback"><a class="info-blocks__callback-order" href="">Заказать обратный звонок</a></li>
+                </ul>
+            </div>
         </div>
         
         <div class="slider"><img src="/img/slider-1.jpg" alt=""></div>
@@ -37,29 +51,137 @@
         <div class="general">
             <div class="general__content-wrapper">
                 <div class="general__left">
+                   <p class="general__title">Преимущества</p>
                     <div class="general__list">
                         <ul class="advantages">
-                            <li class="advantages__items">Гарантия до 10 лет</li>
-                            <li class="advantages__items">Более 200 расцветок и многообразие фактур</li>
-                            <li class="advantages__items">Множество решения для потолка и других поверхностей</li>
-                            <li class="advantages__items">Доступные цены</li>
-                            <li class="advantages__items">Большой опыт работы с 2006 года</li>
+                            <li class="advantages__items  advantages__items--icon-1">Гарантия до 10 лет</li>
+                            <li class="advantages__items  advantages__items--icon-2">Более 200 расцветок и многообразие фактур</li>
+                            <li class="advantages__items  advantages__items--icon-3">Множество решения для потолка и других поверхностей</li>
+                            <li class="advantages__items  advantages__items--icon-4">Доступные цены</li>
+                            <li class="advantages__items  advantages__items--icon-5">Большой опыт работы с 2006 года</li>
                         </ul>
                     </div>
                 </div>
                 <div class="general__right">
                     <div class="general__list">
                         <ul class="communications">
-                            <li class="communications__items">Сделайте заявку на бесплатный замер по телефону:</li>
-                            <li class="communications__items">8 (3513) 59-00-56</li>
-                            <li class="communications__items">Режим работы: Пн-Пт: 9.00-18.00</li>
+                            <li class="communications__items  communications__items--big-fz"><span class="communications__items--biger-fz">Сделайте заявку</span> на бесплатный замер по телефону:</li>
+                            <li class="communications__items  communications__items--medium-fz">8 (3513) 59-00-56</li>
+                            <li class="communications__items  communications__items--low-fz">Режим работы: Пн-Пт: 9.00-18.00</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         
+        <div class="general  general--white">
+            <div class="general__content-wrapper">
+                <div class="general__left">
+                    <div class="general__list">
+                       <h2 class="offers-title">Наши предложения</h2>
+                        <ul class="offers">
+                            <li class="offers__items">
+                                <h3 class="offers__header">
+                                    Новинка! Бесшовные натяжные потолки
+                                </h3>
+                                <p class="offers__descr  offers__descr--marginb">
+                                    Помимо стандартных натяжных потолков, мы рады предложить вашему вниманию новинку - бесшовные натяжные потолки White Fielde. Производство таких пленок на фабриках стран Европы началось еще совсем недавно, но, тем не менее, уже пользуется большим спросом.
+                                </p>
+                                <p class="offers__descr">
+                                    Бесшовные натяжные потолки глянцевые, матовые, а также сатиновые, уже с успехом устанавливаются и являются <br>лидерами дизайнерских решений в жилых и не жилых помещениях.
+                                </p>
+                                <a href="#" class="offers__link-more">Подробнее...</a>
+                            </li>
+                            <li class="offers__items">
+                                <h3 class="offers__header">
+                                    Новинка! Бесшовные натяжные потолки
+                                </h3>
+                                <p class="offers__descr  offers__descr--marginb">
+                                    Помимо стандартных натяжных потолков, мы рады предложить вашему вниманию новинку - бесшовные натяжные потолки White Fielde. Производство таких пленок на фабриках стран Европы началось еще совсем недавно, но, тем не менее, уже пользуется большим спросом.
+                                </p>
+                                <p class="offers__descr">
+                                    Бесшовные натяжные потолки глянцевые, матовые, а также сатиновые, уже с успехом устанавливаются и являются <br>лидерами дизайнерских решений в жилых и не жилых помещениях.
+                                </p>
+                                <a href="#" class="offers__link-more">Подробнее...</a>
+                            </li>
+                            <li class="offers__items">
+                                <h3 class="offers__header">
+                                    Новинка! Бесшовные натяжные потолки
+                                </h3>
+                                <p class="offers__descr  offers__descr--marginb">
+                                    Помимо стандартных натяжных потолков, мы рады предложить вашему вниманию новинку - бесшовные натяжные потолки White Fielde. Производство таких пленок на фабриках стран Европы началось еще совсем недавно, но, тем не менее, уже пользуется большим спросом.
+                                </p>
+                                <p class="offers__descr">
+                                    Бесшовные натяжные потолки глянцевые, матовые, а также сатиновые, уже с успехом устанавливаются и являются <br>лидерами дизайнерских решений в жилых и не жилых помещениях.
+                                </p>
+                                <a href="#" class="offers__link-more">Подробнее...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="general__right">
+                    <div class="general__list">
+                       <h2 class="offers-title">Контакты</h2>
+                        <ul class="contacts">
+                            <li class="contacts__items">
+                                <p class="contacts__phone">8 (3513) 59-00-56</p>
+                                <p class="contacts__phone">8 (902) 86-58-642</p>
+                            </li>
+                            <li class="contacts__items"><a class="contacts__email" href="mailto:prostor76@vk.ru">prostor76@vk.ru</a></li>
+                            <li class="contacts__items">
+                                <p class="contacts__adress">г.Миасс, пр. Автозаводцев, 36</p>
+                            </li>
+                        </ul>
+                        
+                        <ul class="gallery">
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                        <li class="gallery__img"><img src="" alt="Наши работы"></li>
+                    </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    
+    <footer class="page-footer">
+        <div class="page-footer__site"><a href="#">Простор74.ru</a>, 2006-2013</div>
+        <ul class="page-footer__roof">
+            <li class="page-footer__roof-items">Натяжные потолки</li>
+            <li class="page-footer__roof-items"><a href="#" class="page-footer__roof-links">Достоинства</a></li>
+            <li class="page-footer__roof-items"><a href="#" class="page-footer__roof-links">Фактура и цвет</a></li>
+            <li class="page-footer__roof-items"><a href="#" class="page-footer__roof-links">Монтаж</a></li>
+            <li class="page-footer__roof-items"><a href="#" class="page-footer__roof-links">Отличия от подвесного</a></li>
+        </ul>
+        
+        <ul class="page-footer__menu">
+            <li class="page-footer__items"><a href="#" class="page-footer__menu-links">О нас</a></li>
+            <li class="page-footer__items"><a href="#" class="page-footer__menu-links">Наши работы</a></li>
+            <li class="page-footer__items"><a href="#" class="page-footer__menu-links">Для дилеров</a></li>
+            <li class="page-footer__items"><a href="#" class="page-footer__menu-links">Прайс</a></li>
+            <li class="page-footer__items"><a href="#" class="page-footer__menu-links">Контакты</a></li>
+        </ul>
+        
+        <div class="site-dev">
+            <ul class="site-dev__list">
+                <li class="site-dev__link"><a href="">Разработка сайта</a></li>
+                <li class="site-dev__logo"><a href=""><img src="" alt="logo"></a></li>
+            </ul>
+        </div>
+        
+    </footer>
+    
+    
 
 </body>
 
