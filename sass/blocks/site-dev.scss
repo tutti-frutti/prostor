@@ -1,0 +1,24 @@
+.site-dev {
+    max-width: 730px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #dcdcdc;
+    
+    &__items {
+        display: inline-block;
+    }
+    
+    &__link {
+        
+        font-size: 12px;
+        line-height: 21px;
+        font-family: "Open Sans";
+        font-weight: normal;
+        color: #8b8b8b;
+    }
+    
+    &__logo {
+        display: inline-block;
+    }
+}
+

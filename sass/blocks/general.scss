@@ -5,6 +5,12 @@
         background: #fff;
     }
     
+    &__list {
+        &--border {
+            border-left: 1px solid #dcdcdc;
+        }
+    }
+    
     &__content-wrapper {
         max-width: 821px;
         margin: 0 auto;

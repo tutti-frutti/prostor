@@ -1,10 +1,32 @@
 .contacts {
+    margin-left: 30px;
+    
+    &__items {
+        margin-bottom: 30px;
+    }
+    
     &__phone {
-        
         font-size: 22px;
         line-height: 31px;
         font-family: "PT Sans Caption";
         font-weight: bold;
+        color: #595959;
+    }
+    
+    &__email {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Verdana";
+        font-weight: normal;
+        text-decoration: underline;
+        color: #3a96c5;
+    }
+    
+    #__adress {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Verdana";
+        font-weight: normal;
         color: #595959;
     }
 }

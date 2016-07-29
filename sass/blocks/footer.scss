@@ -1,0 +1,68 @@
+.page-footer {
+    background: #f3f3f3;
+    
+    &__site {
+        display: inline-block;
+        width: 25%;
+        margin-right: 25%;
+        vertical-align: top
+    }
+    
+    &__link {
+        font-size: 17px;
+        line-height: 24px;
+        font-family: "PT Sans Caption";
+        font-weight: bold;
+        color: #808080;
+    }
+    
+    &__roof {
+        display: inline-block;
+        width: 20%;
+        margin-right: 5%;
+        vertical-align: top;
+        font-size: 17px;
+        line-height: 24px;
+        font-family: "PT Sans Caption";
+        font-weight: bold;
+        color: #808080;
+    }
+    
+    &__roof-links {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Open Sans";
+        font-weight: normal;
+        color: #8b8b8b;
+        
+        &:hover {
+            color: #3a96c5;
+        }
+    }
+    
+    &__menu {
+        display: inline-block;
+        width: 15%;
+        vertical-align: top
+    }
+    
+    &__menu-items {
+        font-size: 17px;
+        line-height: 24px;
+        font-family: "PT Sans Caption";
+        font-weight: bold;
+        color: #808080;
+    }
+    
+    &__menu-links {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Open Sans";
+        font-weight: normal;
+        color: #8b8b8b;
+        
+        &:hover {
+            color: #3a96c5;
+        }
+    }
+}
