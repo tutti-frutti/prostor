@@ -1,0 +1,49 @@
+.green-logo {
+    position: absolute;
+    content: "";
+    width: 270px;
+    height: 285px;
+    bottom: 258px;
+    right: 31px;
+	background: url("/img/green-logo-discount.png") no-repeat 50% 50%;
+    z-index: 1;
+    
+    @media #{$mobile} {
+        bottom: 230px;
+        right: 50%;
+        margin-right: -135px;
+    }
+    
+    &__descr {
+        margin-top: 90px;
+        margin-left: -3px;
+        text-align: center;
+    }
+    
+    &__text {
+        color: #fff;
+        
+        &--top {
+            margin-bottom: 25px;
+            font-size: 30px;
+            line-height: 24px;
+            font-family: "PT Sans Caption";
+            font-weight: bold;
+        }
+        
+        &--medium {
+            margin-bottom: 7px;
+            font-size: 14px;
+            line-height: 12px;
+            font-family: "PT Sans Caption";
+            font-weight: normal;
+        }
+        
+        &--bottom {
+            font-size: 24px;
+            line-height: 24px;
+            font-family: "PT Sans Caption";
+            font-weight: bold;
+        }
+    }
+}

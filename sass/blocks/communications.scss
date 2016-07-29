@@ -1,5 +1,5 @@
 .communications {
-	margin-top: 125px;
+	margin-top: 105px;
     padding-left: 30px;
     
     &__items {
@@ -8,9 +8,13 @@
         font-weight: bold;
         
         &--big-fz {
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             font-size: 24px;
             line-height: 24px;
+            
+            @media #{$tablet} {
+                font-size: 20px;
+            }
         }
         
         &--biger-fz {
@@ -18,12 +22,20 @@
             margin-bottom: 10px;
             font-size: 32px;
             line-height: 30px;
+            
+            @media #{$tablet} {
+                font-size: 20px;
+            }
         }
         
         &--medium-fz {
             margin-bottom: 45px;
             font-size: 30px;
             line-height: 24px;
+            
+            @media #{$tablet} {
+                font-size: 20px;
+            }
         }
         
         &--low-fz {
@@ -31,6 +43,10 @@
             line-height: 18px;
             font-family: "Verdana";
             font-weight: normal;
+            
+            @media #{$tablet} {
+                font-size: 14px;
+            }
         }
     }
 }

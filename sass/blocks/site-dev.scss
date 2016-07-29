@@ -1,4 +1,6 @@
 .site-dev {
+    padding-top: 12px;
+    padding-bottom: 30px;
     max-width: 730px;
     margin: 0 auto;
     text-align: center;
@@ -6,6 +8,7 @@
     
     &__items {
         display: inline-block;
+        margin-right: 5px;
     }
     
     &__link {
@@ -15,10 +18,22 @@
         font-family: "Open Sans";
         font-weight: normal;
         color: #8b8b8b;
+        
+        &:hover {
+            color: #3a96c5;
+        }
     }
     
     &__logo {
         display: inline-block;
+    }
+    
+    &__img {
+        filter: grayscale(100%);
+        
+        &:hover {
+            filter: grayscale(0);
+        }
     }
 }
 

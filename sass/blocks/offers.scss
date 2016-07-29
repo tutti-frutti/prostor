@@ -1,21 +1,29 @@
 .offers-title {
-    margin-bottom: 50px;
-    margin-left: 30px;
+    margin-bottom: 43px;
+    margin-left: 28px;
 	font-size: 20px;
     line-height: 24px;
     font-family: "PT Sans Caption";
     font-weight: bold;
     color: #3a96c5;
+    
+    &--left {
+        margin-left: 0;
+    }
+    
+    &--right {
+        margin-bottom: 38px;
+    }
 }
 
 .offers {
     
     &__items {
-        margin-bottom: 50px;
+        margin-bottom: 45px;
     }
     
     &__header {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
         font-size: 18px;
         line-height: 18px;
         font-family: "PT Sans Caption";
@@ -31,7 +39,7 @@
         color: #595959;
         
         &--marginb {
-            margin-bottom: 15px;
+            margin-bottom: 9px;
         }
     }
     

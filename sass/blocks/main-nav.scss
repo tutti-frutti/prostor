@@ -4,9 +4,13 @@
 	min-height: 60px;
     margin: 0 auto;
     
+    @media #{$tablet} {
+        display: none;
+    }
+    
     &__toogle {
         display: none;
-//        border: 0;
+        border: 0;
         position: absolute;
         content: "";
         width: 50px;
@@ -14,6 +18,7 @@
         top: 20px;
         right: 12px;
         background: url("/img/hamburger-blue.png") no-repeat 50% 50%;
+        z-index: 5;
         
         @media #{$tablet} {
             display: block;
@@ -36,11 +41,15 @@
         width: 39%;
         line-height: 60px;
         text-align: right;
+        
+        @media #{$tablet} {
+            width: 100%;
+        }
     }
     
     &__items {
             display: inline-block;
-            margin-right: 8%;
+            margin-right: 9%;
         
         @media #{$tablet} {
             display: block;
@@ -58,6 +67,15 @@
             margin-right: 3%;
             text-align: center;
             background: #3a96c5;
+            background-position: -2px -259px;
+            background-image: url("/img/sprite.png");
+            background-repeat: no-repeat;
+            
+            &:hover {
+                background-position: -2px -317px;
+                background-image: url("/img/sprite.png");
+                background-repeat: no-repeat;
+            }
             
             @media #{$tablet} {
                 width: auto;
@@ -65,48 +83,38 @@
                 text-align: left;
                 background: #0f5c85;
             }
-            
-            &::before {
-                position: absolute;
-                content: "";
-                width: 16px;
-                height: 19px;
-                top: 20px;
-                left: 20px;
-                background: url("/img/icon-price.png") no-repeat 50% 50%;
-                
                 @media #{$tablet} {
                     position: static;
             }
         }
-    }
         
         &--dealer {
             position: relative;
             padding-left: 40px;
+            background-position: -15px -142px;
+            background-image: url("/img/sprite.png");
+            background-repeat: no-repeat;
+            
+            &:hover {
+                background-position: -15px -199px;
+                background-image: url("/img/sprite.png");
+                background-repeat: no-repeat;
+            }
             
             @media #{$tablet} {
                 padding-left: 30px;
                 text-align: left;
             }
             
-            &::before {
-                position: absolute;
-                content: "";
-                width: 16px;
-                height: 19px;
-                top: 20px;
-                left: 12px;
-                background: url("/img/icon-dealer.png") no-repeat 50% 50%;
-                
-                @media #{$tablet} {
-                    position: static;
-                }
-            }
+
         }
     }
+        
+        
+   
     
     &__links {
+        padding: 20px 0;
         font-size: 14px;
         line-height: 24px;
         font-family: "PT Sans Caption";
@@ -126,9 +134,17 @@
                 margin-right: 0;
                 padding-left: 30px;
                 
+                &:hover {
+                    color: #0f5c85;
+                    
+                    @media #{$tablet} {
+                        color: #78acc8;
+                    }
+                }
+                
                 @media #{$tablet} {
                     padding-left: 0;
                 }
          }
     }
-}
+ }

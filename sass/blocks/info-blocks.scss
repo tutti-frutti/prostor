@@ -1,15 +1,28 @@
 .info-blocks {
     max-width: 821px;
     min-height: 150px;
-    line-height: 150px;
+    line-height: 142px;
     margin: 0 auto;
+    
+    @media #{$tablet} {
+        text-align: center;
+    }
     
     &__logo {
         display: inline-block;
+        margin-left: -9px;
+        margin-right: 5%;
         width: 23%;
-        margin-right: 3%;
         line-height: normal;
         vertical-align: middle;
+        
+        @media #{$tablet} {
+            display: block;
+            width: auto;
+            margin: 0 auto;
+            margin-top: 10px;
+            
+        }
     }
     
     &__slogan {
@@ -19,6 +32,14 @@
         line-height: normal;
         vertical-align: middle;
 //        max-width: 350px;
+        
+        @media #{$tablet} {
+            display: block;
+            width: auto;
+            margin: 0 auto;
+            margin-top: 10px;
+            
+        }
     }
     
     &__top-contacts {
@@ -27,6 +48,12 @@
         line-height: normal;
         vertical-align: middle;
 //        max-width: 205px;
+        
+        @media #{$tablet} {
+            display: block;
+            width: auto;
+            margin: 10px auto;
+        }
     }
     
     &__title {
@@ -55,15 +82,23 @@
     
     &__callback-order {
         padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 12px;
         font-size: 13px;
         line-height: 24px;
         font-family: "PT Sans Caption";
         font-weight: normal;
         text-decoration: underline;
         color: #3a96c5;
+        background-position: -27px -24px;
+        background-image: url("/img/sprite.png");
+        background-repeat: no-repeat;
             
             &:hover {
                 color: #0f5c85;
+                background-position: -14px -96px;
+                background-image: url("/img/sprite.png");
+                background-repeat: no-repeat;
         }
     }
 }

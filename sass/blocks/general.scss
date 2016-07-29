@@ -1,9 +1,12 @@
 .general {
+    margin-top: 55px;
     background: url("/img/bg-adv.jpg") repeat;
     
     &--white {
         background: #fff;
     }
+    
+    
     
     &__list {
         &--border {
@@ -14,12 +17,17 @@
     &__content-wrapper {
         max-width: 821px;
         margin: 0 auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 24px;
+        padding-bottom: 22px;
+        
+        &--padding {
+            padding-top: 16px;
+            padding-bottom: 54px;
+        }
     }
     
     &__title {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         font-size: 20px;
         line-height: 37px;
         font-family: "PT Sans Caption";
@@ -30,11 +38,32 @@
     &__left {
         display: inline-block;
         width: 62%;
+//        max-width: 508px;
+        
+        @media #{$mobile} {
+            width: 100%;
+        }
+        
+        &--marginr {
+            margin-right: 29px;
+        }
     }
     
     &__right {
+        position: relative;
         display: inline-block;
         width: 37%;
+//        max-width: 281px;
         vertical-align: top;
+        
+        &--narrow {
+            width: 33%;
+        }
+        
+        @media #{$mobile} {
+            padding-top: 200px;
+            width: 100%;
+            
+        }
     }
 }

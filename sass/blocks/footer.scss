@@ -1,11 +1,25 @@
 .page-footer {
     background: #f3f3f3;
     
+    @media #{$tablet} {
+            text-align: center;
+        }
+    
+    &__wrapper {
+        padding-top: 29px;
+        max-width: 821px;
+        margin: 0 auto;
+    }
+    
     &__site {
         display: inline-block;
         width: 25%;
-        margin-right: 25%;
-        vertical-align: top
+        margin-right: 26%;
+        vertical-align: top;
+            
+        @media #{$tablet} {
+            width: 100%;
+        }
     }
     
     &__link {
@@ -19,13 +33,24 @@
     &__roof {
         display: inline-block;
         width: 20%;
-        margin-right: 5%;
+        margin-right: 9%;
         vertical-align: top;
         font-size: 17px;
         line-height: 24px;
         font-family: "PT Sans Caption";
         font-weight: bold;
         color: #808080;
+        
+        @media #{$tablet} {
+            width: 100%;
+        }
+    }
+    
+    &__roof-items {
+        
+        &--marginb {
+            margin-bottom: 19px;
+        }
     }
     
     &__roof-links {
@@ -41,9 +66,14 @@
     }
     
     &__menu {
+        margin-bottom: 30px;
         display: inline-block;
         width: 15%;
-        vertical-align: top
+        vertical-align: top;
+            
+        @media #{$mobile} {
+            width: 100%;
+        }
     }
     
     &__menu-items {
@@ -52,6 +82,10 @@
         font-family: "PT Sans Caption";
         font-weight: bold;
         color: #808080;
+        
+        &--marginb {
+            margin-bottom: 19px;
+        }
     }
     
     &__menu-links {

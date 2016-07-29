@@ -1,0 +1,41 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-call {
+    width: 45px;
+    height: 45px;
+    background-position: -20px -20px;
+}
+
+.sprite-icon-call-push {
+    width: 19px;
+    height: 19px;
+    background-position: -20px -105px;
+}
+
+.sprite-icon-dealer {
+    width: 18px;
+    height: 17px;
+    background-position: -20px -164px;
+}
+
+.sprite-icon-dealer-push {
+    width: 18px;
+    height: 17px;
+    background-position: -20px -221px;
+}
+
+.sprite-icon-price {
+    width: 16px;
+    height: 19px;
+    background-position: -20px -278px;
+}
+
+.sprite-icon-price-push {
+    width: 16px;
+    height: 19px;
+    background-position: -20px -337px;
+}

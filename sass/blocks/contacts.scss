@@ -1,8 +1,13 @@
 .contacts {
-    margin-left: 30px;
+//    margin-left: 30px;
     
     &__items {
-        margin-bottom: 30px;
+        margin-bottom: 22px;
+        margin-left: 28px;
+        
+        &--marginb {
+            margin-bottom: 26px;
+        }
     }
     
     &__phone {
@@ -22,11 +27,15 @@
         color: #3a96c5;
     }
     
-    #__adress {
+    &__adress {
         font-size: 14px;
         line-height: 24px;
         font-family: "Verdana";
         font-weight: normal;
         color: #595959;
+        
+        &--marginb {
+            margin-bottom: 88px;
+        }
     }
 }
