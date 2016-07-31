@@ -99,11 +99,18 @@
                 background-position: -15px -199px;
                 background-image: url("/img/sprite.png");
                 background-repeat: no-repeat;
+                
+                @media #{$tablet} {
+                padding-left: 30px;
+                text-align: left;
+                background-image: none;
+            }
             }
             
             @media #{$tablet} {
                 padding-left: 30px;
                 text-align: left;
+                background-image: none;
             }
             
 

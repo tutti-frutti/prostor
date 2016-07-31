@@ -27,3 +27,20 @@ img {
 * {
     box-sizing: border-box;
 }
+
+#upbutton {
+    background: url("/img/up3.png") no-repeat scroll;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+  }
+
+.slicknav_menu {
+    background: #0f5c85;
+}
