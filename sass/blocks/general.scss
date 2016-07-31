@@ -2,6 +2,14 @@
     margin-top: 55px;
     background: url("/img/bg-adv.jpg") repeat;
     
+    &--shadow {
+        box-shadow: inset 0 2px 40px -13px #494A4A;
+    }
+    
+    @media #{$mobile} {
+        margin-top: 55px;
+    }
+    
     &--white {
         background: #fff;
     }
@@ -33,6 +41,10 @@
         font-family: "PT Sans Caption";
         font-weight: bold;
         color: #fefefe;
+        
+        @media #{$tablet} {
+            padding-left: 20px;
+        }
     }
     
     &__left {
@@ -46,6 +58,10 @@
         
         &--marginr {
             margin-right: 29px;
+            
+            @media #{$tablet} {
+                margin-right: 0;
+            }
         }
     }
     
@@ -58,12 +74,18 @@
         
         &--narrow {
             width: 33%;
+            
+            @media #{$mobile} {
+                width: 100%;
+            }
         }
         
-        @media #{$mobile} {
+        &--paddingt {
+            @media #{$mobile} {
             padding-top: 200px;
+            padding-right: 10px;
             width: 100%;
-            
         }
     }
+  }
 }

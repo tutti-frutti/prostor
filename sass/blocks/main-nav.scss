@@ -148,3 +148,11 @@
          }
     }
  }
+
+.slicknav_menu {
+    display: none;
+    
+    @media #{$tablet} {
+        display: block;
+    }
+}

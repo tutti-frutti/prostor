@@ -5,16 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans|Open+Sans:400,700,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick.scss"/>
-    <link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick-theme.scss"/>
+    
+    <link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick-theme.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen"/>
+    
+    <script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    
+    <script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js"></script>
+    
+    <link rel="stylesheet" href="js/SlickNav-master/dist/slicknav.min.css"/>
+    
+    <script src="/js/SlickNav-master/dist/jquery.slicknav.min.js"></script>
+    
     <title>Миасс</title>
 </head>
 
 <body>
 
     <header class="page-header">
-        <button class="main-nav__toogle"></button>
+<!--        <button class="main-nav__toogle"></button>-->
+<!--
         <nav class="main-nav">
             <ul class="main-nav__list">
                 <li class="main-nav__items"><a class="main-nav__links  main-nav__links--button" href="#">Главная</a></li>
@@ -27,6 +46,22 @@
                 <li class="main-nav__items  main-nav__items--dealer  main-nav__items--no-margin"><a class="main-nav__links" href="#">Для дилеров</a></li>
             </ul>
         </nav>
+-->
+   
+   <nav class="main-nav" id="menu">
+            <ul class="main-nav__list">
+                <li class="main-nav__items"><a class="main-nav__links  main-nav__links--button" href="#">Главная</a></li>
+                <li class="main-nav__items"><a class="main-nav__links" href="#">О нас</a></li>
+                <li class="main-nav__items"><a class="main-nav__links" href="#">Наши работы</a></li>
+                <li class="main-nav__items  main-nav__items--no-margin"><a class="main-nav__links  main-nav__links" href="#">Контакты</a></li>
+                
+            </ul>
+            <ul class="main-nav__list-users">
+                <li class="main-nav__items  main-nav__items--price"><a class="main-nav__links  main-nav__links--icon" href="#">Прайс</a></li>
+                <li class="main-nav__items  main-nav__items--dealer  main-nav__items--no-margin"><a class="main-nav__links" href="#">Для дилеров</a></li>
+            </ul>
+        </nav>
+   
     </header>
 
     <main>
@@ -61,7 +96,7 @@
         
         
 
-        <div class="general">
+        <div class="general  general--shadow">
             <div class="general__content-wrapper">
                 <div class="general__left">
                     <p class="general__title">Преимущества</p>
@@ -75,7 +110,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="general__right">
+                <div class="general__right  general__right--paddingt">
                     <div class="general__list">
                         <ul class="communications">
                             <li class="communications__items  communications__items--big-fz"><span class="communications__items--biger-fz">Сделайте заявку</span> на бесплатный замер по телефону:</li>
@@ -158,18 +193,18 @@
                         </ul>
 
                         <ul class="gallery">
-                            <li class="gallery__img"><img src="/img/gallery-icon-1.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-2.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-3.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-1.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-2.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-3.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-1.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-2.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-3.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-1.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-2.png" alt="Наши работы"></li>
-                            <li class="gallery__img"><img src="/img/gallery-icon-3.png" alt="Наши работы"></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/1_b.jpg" title="Test Text"><img src="/img/gallery-icon-1.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/2_b.jpg" title="Test Text"><img src="/img/gallery-icon-2.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/3_b.jpg" title="Test Text"><img src="/img/gallery-icon-3.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/4_b.jpg" title="Test Text"><img src="/img/gallery-icon-1.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/5_b.jpg" title="Test Text"><img src="/img/gallery-icon-2.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/1_b.jpg" title="Test Text"><img src="/img/gallery-icon-3.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/2_b.jpg" title="Test Text"><img src="/img/gallery-icon-1.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/3_b.jpg" title="Test Text"><img src="/img/gallery-icon-2.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/4_b.jpg" title="Test Text"><img src="/img/gallery-icon-3.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/5_b.jpg" title="Test Text"><img src="/img/gallery-icon-1.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/1_b.jpg" title="Test Text"><img src="/img/gallery-icon-2.png" alt="Наши работы"></a></li>
+                            <li class="gallery__img"><a class="fancybox" rel="gallery" href="/img/2_b.jpg" title="Test Text"><img src="/img/gallery-icon-3.png" alt="Наши работы"></a></li>
                         </ul>
 
                         <span class="gallery__all"><a href="#" class="gallery__link">Посмотреть все работы</a></span>
@@ -213,9 +248,9 @@
     </footer>
 
 
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+<!--    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<!--    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
     <script type="text/javascript" src="/js/slick-1.6.0/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>

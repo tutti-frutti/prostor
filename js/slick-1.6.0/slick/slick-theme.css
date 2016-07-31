@@ -26,10 +26,11 @@
     top: 50%;
 
     display: block;
+    z-index: 1;
 
     width: 20px;
     height: 20px;
-    padding: 0;
+    padding: 0px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -67,11 +68,11 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+/*    font-size: 20px;*/
     line-height: 1;
 
     opacity: .75;
-    color: white;
+/*    color: white;*/
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,16 +80,26 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 15px;
+/*
+    background-image: url("/img/arr-left.png");
+    background-repeat: no-repeat;
+*/
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 25px;
     left: auto;
 }
 .slick-prev:before
 {
     content: '←';
+    left: 15px;
+/*
+    background-image: url("/img/arr-left.png");
+    background-repeat: no-repeat;
+    padding: 25px;
+*/
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -97,12 +108,20 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 15px;
+/*
+    background-image: url("/img/arr-right.png");
+    background-repeat: no-repeat;
+*/
+}
+
+.slick-next:hover {
+    opacity: 0.75;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 25px;
 }
 .slick-next:before
 {
@@ -111,6 +130,33 @@
 [dir='rtl'] .slick-next:before
 {
     content: '←';
+}
+
+img.a {
+/*    display: inline;*/
+    position: absolute;
+    content: "";
+    top: 45%;
+    left: 5%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+img.a:hover {
+    opacity: 0.75;
+}
+
+img.b {
+/*    display: inline;*/
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+img.b:hover {
+    opacity: 0.75;
 }
 
 /* Dots */
@@ -128,11 +174,15 @@
 
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: -13px 0;
+    
+    @media #{$mobile} {
+        margin-top: -3px;
+    }
 
     list-style: none;
 
-    text-align: center;
+    text-align: left;
 }
 .slick-dots li
 {
@@ -178,7 +228,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 10px;
     line-height: 20px;
 
     position: absolute;
@@ -192,7 +242,7 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: #378db9;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +250,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #378db9;
 }
