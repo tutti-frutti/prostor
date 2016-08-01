@@ -1,0 +1,16 @@
+.product-back {
+	background-image: url(/img/left-arrow-gray-hi-small.png);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    
+    &__link {
+        padding-left: 15px;
+        font-size: 12px;
+        line-height: 18px;
+        font-family: "PT Sans Caption";
+        font-weight: normal;
+        vertical-align: text-top;
+        text-decoration: underline;
+        color: #3a3a3a;
+    }
+}

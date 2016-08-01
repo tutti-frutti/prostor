@@ -9,10 +9,12 @@ $(document).ready(function(){
       dots: true,
 //      accessibility: true,
       arrows: true,
-//      fade: true,
+      slidesToShow: 1, // кол-во слайдов для показа
+//      fade: true, // не перелистывается, а через fade
 //      autoplay: true,
       prevArrow: '<img class="a" src="/img/arr-left.png">',
       nextArrow: '<img class="b" src="/img/arr-right.png">',
+//      cssEase: 'easeInBack',
 //      centerMode: true, //уменьшает картинку, ставит в центре
   });
 });
@@ -38,7 +40,7 @@ $(function(){
     });
 });
 
-$(window).scroll(function() {
+$(window).scroll(function() { // кнопка наверх
     if ($(this).scrollTop() > 100) {
       if ($('#upbutton').is(':hidden')) {
         $('#upbutton').css({
@@ -65,9 +67,16 @@ $(document).ready(function() {   // скрипт для pop-up
         autoHeight  : true,
 //      autoWidth   : true,
 //		autoSize	: true,
-        padding     : 3,
+        padding     : 3,    //размер белого поля вокруг фото
 		closeClick	: false,
 		openEffect	: 'none',
 		closeEffect	: 'none'
 	});
+});
+
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 3,
+  autoplay: true,
 });
