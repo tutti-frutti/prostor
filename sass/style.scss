@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 
 @import "blocks/header.scss";
 @import "blocks/main-nav.scss";
@@ -17,9 +18,12 @@
 @import "blocks/product.scss";
 @import "blocks/product-back.scss";
 @import "blocks/preview.scss";
+@import "blocks/general-info.scss";
+@import "blocks/additional-info.scss";
 
 @import "global/scaffolding.scss";
 @import "global/sprite.scss";
+@import "global/btn.scss";
 
 @import "js/slick-1.6.0/slick/slick.scss";
 @import "js/slick-1.6.0/slick/slick-theme.scss";

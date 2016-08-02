@@ -1,3 +1,69 @@
 .preview {
 	margin-top: 15px;
+    max-width: 335px;
+    display: inline-block;
+    
+    &__list {
+        margin: 5px 0 10px ;
+    }
+    
+    &__delivery-info {
+        margin-top: 20px;
+    }
+    
+    &__social {
+        border-bottom: 1px solid #bababa;
+    }
+    
+    &__items {
+        display: inline-block;
+        
+            &:hover {
+                opacity: .5;
+        }
+    }
+    
+    &__items-deliv {
+        display: inline-block;
+        margin-bottom: 15px;
+        width: 49%;
+        
+        &--icon-1 {
+            background-position: -20px -13px;
+            background-image: url("/img/sprite2.png");
+            background-repeat: no-repeat;
+        }
+        
+        &--icon-2 {
+            background-position: -20px -124px;
+            background-image: url("/img/sprite2.png");
+            background-repeat: no-repeat;
+        }
+        
+        &--icon-3 {
+            background-position: -20px -69px;
+            background-image: url("/img/sprite2.png");
+            background-repeat: no-repeat;
+        }
+        
+        &--icon-4 {
+            background-position: -20px -185px;
+            background-image: url("/img/sprite2.png");
+            background-repeat: no-repeat;
+        }
+        
+        
+    }
+    
+    &__link {
+        padding-left: 30px;
+        @include pt-sans-caption-norm(12px, 22px);
+        text-decoration: underline;
+        color: #3e3e3e;
+        
+        &:hover {
+            color: $link-color-hover;
+        }
+        
+    }
 }

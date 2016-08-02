@@ -12,5 +12,9 @@
         vertical-align: text-top;
         text-decoration: underline;
         color: #3a3a3a;
+        
+        &:hover {
+            color: #0f5c85;
+        }
     }
 }

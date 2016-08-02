@@ -1,0 +1,33 @@
+.additional {
+	display: inline-block;
+    max-width: 365px;
+}
+
+.additional-table {
+    
+    &__title {
+        @include pt-sans-caption-norm(13px, 14px);
+        margin: 10px 0;
+    }
+    
+    
+    &__trow {
+        &:nth-child(odd) {
+            background: #ececec;
+        }
+    }
+	
+    &__tdata {
+        @include pt-sans-caption-norm(11px, 14px);
+        display: inline-block;
+        
+        
+        &--width-1 {
+            width: 135px;
+        }
+        
+        &--width-2 {
+            width: 135px;
+        }
+    }
+}

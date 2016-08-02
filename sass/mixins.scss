@@ -1,0 +1,15 @@
+@mixin pt-sans-caption-norm($font-size, $line-height) {
+    font-family: "PT Sans Caption";
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin pt-sans-caption-bold($font-size, $line-height) {
+    font-family: "PT Sans Caption";
+    font-weight: bold;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}
