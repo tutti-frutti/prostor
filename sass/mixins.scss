@@ -13,3 +13,13 @@
     font-size: $font-size;
     line-height: $line-height;
 }
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin padding_top-bottom($padding-top, $padding-bottom) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}

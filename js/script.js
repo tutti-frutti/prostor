@@ -30,6 +30,7 @@ $(document).ready(function() {
                 padding : 3,
                 width   : '320',
                 closeBtn: false,
+                fitToView: false,
         });
 	});
 

@@ -18,6 +18,11 @@
     &__left {
         display: inline-block;
         width: 70%;
+        
+        @media #{$mobile} {
+            @include size(100%, 20px);
+            
+        }
     }
     
     &__right {
@@ -52,6 +57,10 @@
     &__buttons {
         display: inline-block;
         width: 195px;
+        
+        @media #{$mobile} {
+            @include padding_top-bottom(10px, 5px);
+        }
     }
     
     &__colors-img {
